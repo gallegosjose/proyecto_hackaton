@@ -1,0 +1,140 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".dropdown-button").dropdown();
+        $(".button-collapse").sideNav();
+        $('.collapsible').collapsible();
+    });
+</script>
+<div class="container" >
+    <nav class="light-blue darken-1">
+        <div class="nav-wrapper">
+            <ul class="left hide-on-med-and-down">
+                <li><a ng-click="entrarPag1()">Emergencias<span class="new badge blue lighten-4"">3</span></a></li>
+                <li><a ng-click="entrarPag2()">Contactos</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a ng-click="salir()">Salir</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card-panel black-text">
+        <h7>Usuario: Juan Carlos Garcia Chavez</h7>
+        <a class="waves-effect waves-light btn  right light-blue darken-1" ng-click="agregarContacto()">+ agregar contacto</a>
+    </div>
+
+
+
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header"><i class="material-icons prefix">account_circle</i>Contacto 1</C></div>
+            <div class="collapsible-body">
+                <div class="card-panel white">
+                    <div class="row">
+                        <table class="highlight">
+                            <thead>
+                            <tr>
+                                <th>Contacto: Juan Jose Garcia Silva</th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <th>DNI:</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Nombre(s):</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Apellidos:</th>
+                                <td>---</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                        <a class="waves-effect waves-light btn  right light-blue darken-1" ng-click="eliminarContacto()">Quitar de la lista</a>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons prefix">account_circle</i>Contacto 2</div>
+            <div class="collapsible-body">
+                <div class="card-panel white">
+                    <div class="row">
+                        <table class="highlight">
+                            <thead>
+                            <tr>
+                                <th>Contacto: Juan Jose Garcia Silva</th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <th>DNI:</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Nombre(s):</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Apellidos:</th>
+                                <td>---</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                        <a class="waves-effect waves-light btn  right light-blue darken-1" ng-click="eliminarContacto()">Quitar de la lista</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons prefix">account_circle</i>Contacto 3</div>
+            <div class="collapsible-body">
+                <div class="card-panel white">
+                    <div class="row">
+                        <table class="highlight">
+                            <thead>
+                            <tr>
+                                <th>Contacto: Juan Jose Garcia Silva</th>
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <th>DNI:</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Nombre(s)</th>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <th>Apellidos</th>
+                                <td>---</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                        <a class="waves-effect waves-light btn  right light-blue darken-1" ng-click="eliminarContacto()">Quitar de la lista</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+
+
+</div>
